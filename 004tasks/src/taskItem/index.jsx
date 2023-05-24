@@ -1,12 +1,16 @@
+import { useState } from 'react'
+
 function TaskItem(props) {
 
     // const [task, setTask] = React.useState({
     //     {<TaskItem></TaskItem>}
     // })
 
+    const [complete, setComplete] = useState(false)
+
     function onTaskComplete(complete) {
-        props.task.complete = !complete
-        console.log(props.task.title)
+        setComplete(props.task.complete = !complete)
+        console.log(props.task.complete)
         // setTask({ ...title, complete: !complete })
     }
 
