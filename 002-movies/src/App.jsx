@@ -29,6 +29,7 @@ function App() {
 
   return (
     <>
+      <h1>MOVIE LIST</h1>
       {
         movies.map(movie => <Movie key={movie.title} movies={movie} />)
       }
