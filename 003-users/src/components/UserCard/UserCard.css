@@ -1,0 +1,18 @@
+.UserCard {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #ccc;
+    border-radius: 0.5rem;
+}
+
+.UserCard div p {
+    text-align: left;
+}
+
+.UserCard h3, div, p {
+    margin: 0;
+    padding: 0.3rem;
+}
