@@ -1,0 +1,8 @@
+.mybutton {
+    background-color: greenyellow;
+    border: solid 1px green;
+    color: green;
+    font-weight: bold;
+    margin: 4px;
+    cursor: pointer;
+}
