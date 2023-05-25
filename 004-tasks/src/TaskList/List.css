@@ -1,0 +1,15 @@
+.list {
+    border: solid 3px #555;
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+h2 {
+    margin: 0;
+}

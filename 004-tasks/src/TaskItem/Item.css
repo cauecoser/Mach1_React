@@ -1,0 +1,17 @@
+.item {
+    background-color: #F50;
+    color: #fff;
+    border: solid 1px #800;
+    border-radius: 4px;
+    min-width: 150px;
+    width: fit-content;
+    padding: 0.3rem;
+}
+
+.item span {
+    cursor:pointer
+}
+
+.item * {
+    margin: 0;
+}
