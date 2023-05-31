@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+}
+
+.ArticleContainer {
+    width: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0.5rem;
+    border-right: solid 1px #000;
+    border-bottom: solid 1px #000;
+    box-shadow: 2px 2px 2px #999;
+    border-radius: 0 0 0.5rem 0; 
+}
+
+
+img {
+    height: 8rem;
+    overflow: hidden;
+    background-size: cover;
+    border: solid 1px #000;
+    box-shadow: 2px 2px 2px #999;
+}
+
+h2{
+    text-align: left;
+    text-indent: 1rem;
+}
+
+h5 {
+    font-weight: lighter;
+    font-style: italic;
+    text-align: left;
+    text-indent: 1rem;
+}
+
+p {
+    text-indent: 0.5rem;
+    text-align: left;
+}
+a {
+    text-align: right;
+}
