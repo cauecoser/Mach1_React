@@ -2,7 +2,7 @@
     margin: 0;
 }
 
-.ArticleContainer {
+.ArticleContainerDet {
     width: 90rem;
     display: flex;
     flex-direction: column;
