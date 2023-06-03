@@ -6,9 +6,9 @@ import ArticleDetails from './Components/ArticleDetails/ArticleDetails'
 export default function Router() {
     return (
         <Routes>
-            <Route path='/' element={<ArticlesPreview />} />
-            <Route path='/articles' element={<ArticlesPreview />} />
-            <Route path='/article/:title' element={<ArticleDetails />} />
+            <Route path='/' exact element={<ArticlesPreview />} />
+            <Route path='articles' element={<ArticlesPreview />} />
+            <Route path='articles/:id' element={<ArticleDetails />} />
         </Routes>
     )
 }

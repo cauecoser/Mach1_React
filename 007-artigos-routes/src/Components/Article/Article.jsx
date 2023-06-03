@@ -1,4 +1,5 @@
 import './Article.css'
+import { Link } from 'react-router-dom'
 
 export default function Article(props) {
 
@@ -10,7 +11,7 @@ export default function Article(props) {
                 <h2>{props.title}</h2>
                 <hr />
                 <p>{props.contentt}</p>
-                <a href="">Saiba mais... →</a>
+                <Link to={`articles/${props.id}`}>Saiba Mais...</Link>
             </div>
         </>
     )
