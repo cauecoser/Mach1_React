@@ -1,6 +1,6 @@
 import './ArticleDetails.css'
-import { useParams, Link } from 'react-router-dom'
-
+import { useParams, Link, useLocation } from 'react-router-dom'
+import BreadCrumbs from '../BreadCrumbs/BreadCrumbs'
 
 const db = [
     {
@@ -28,10 +28,10 @@ const db = [
 
 export default function ArticleDetails() {
 
-    const art = useParams()
-    
-    const actualArticle = db.find( (artigo) => artigo.id == art.id )
-    
+    const art = useParams() //Aqui poderiausar const { id } = useParams() para usar apenas id ao invés de art.id
+
+    const actualArticle = db.find((artigo) => artigo.id == art.id)
+
     return (
         <>
             <div className='ArticleContainerDet'>
@@ -40,7 +40,10 @@ export default function ArticleDetails() {
                 <h2>{actualArticle.title}</h2>
                 <hr />
                 <p>{actualArticle.contentt}</p>
-                <Link to="/">Retornar à lista ←</Link>
+                <div className='control'>
+                    <Link to="/">← Retornar à lista</Link>
+                    <BreadCrumbs />
+                </div>
             </div>
         </>
     )

@@ -1,0 +1,10 @@
+.bread-crumbs {
+    color: #999;
+    text-align: left;
+    cursor: pointer;
+    font-size: 0.8rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    /* justify-content: baseline; */
+}

@@ -18,6 +18,9 @@
     background-color: #fff;
 }
 
+.control {
+    display: flex;
+}
 
 img {
     max-width: 30rem;
@@ -47,7 +50,4 @@ h5 {
 p {
     text-indent: 0.5rem;
     text-align: left;
-}
-a {
-    text-align: right;
 }
