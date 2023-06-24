@@ -1,13 +1,14 @@
+import './Product.css'
 import { useContext } from "react"
-import Context from "../../context"
+import productContext from "../../context"
 
 export default function Product() {
-    const product = useContext(Context)
+    const { product } = useContext(productContext)
 
     return (
-        <div>
-            <h2>{product.name}</h2>
-            <p>Cost: {product.cost}</p>
+        <div className="container">
+            <h1>{product.name}</h1>
+            <p>- Price: U${product.price} -</p>
             <div className="descript">
                 <p>Description: {product.description}</p>
             </div>

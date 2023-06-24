@@ -1,11 +1,22 @@
-import { createContext } from "react";
+import { createContext, useState } from "react";
 
-const Context = createContext(
-    {
-        name: "Office Chair",
-        cost: "U$ 180,00",
-        description: "Confortable chair with arms support and changeble hight."
-    }
-)
+const productContext = createContext()
 
-export default Context
+export const productInitialState = {
+    name: 'no name',
+    price: '0,00',
+    description: 'no description'
+}
+
+export function PorductProvider(props) {
+
+    const [product, setProduct] = useState(productInitialState)
+
+    return (
+        <productContext.Provider value={{ product, setProduct }}>
+            {props.children}
+        </productContext.Provider>
+    )
+}
+
+export default productContext
