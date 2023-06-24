@@ -12,7 +12,7 @@ export default function ProductReducer(state, action) {
 
         case 'DEL_PRODUCT':
             state.pop()
-            return [...state] 
+            return [...state]
             
         default:
             return ProductsInitialState

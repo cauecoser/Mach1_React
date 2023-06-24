@@ -40,3 +40,29 @@
 .read-the-docs {
   color: #888;
 }
+
+.mainDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.result {
+  height: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  font-size: 1.2rem;
+}
+
+.buttons {
+  display: flex;
+  gap: 2rem;
+}
+
+.button {
+  background-color: #00f;
+  color: #fff;
+  border: solid 1px #003;
+}
