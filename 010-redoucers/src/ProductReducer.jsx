@@ -12,9 +12,8 @@ export default function ProductReducer(state, action) {
 
         case 'DEL_PRODUCT':
             state.pop()
-            console.log(state)
-            return state 
-
+            return [...state] 
+            
         default:
             return ProductsInitialState
     }
